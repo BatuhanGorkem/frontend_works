@@ -1,0 +1,34 @@
+.wrapper {
+  display: flex;
+
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+.wrapper a {
+  width: 220px;
+  height: 70px;
+  text-decoration: none;
+  border: 1px solid #000;
+  font-size: 22px;
+  line-height: 70px;
+  position: relative;
+}
+.wrapper a span {
+  background: #ff0000;
+  position: absolute;
+  transition: 0.8s ease-out;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+.to-right {
+  width: 0px;
+  height: 70px;
+}
+.wrapper a:hover .to-right {
+  width: 220px;
+  transition: 0.8s;
+}
